@@ -9,7 +9,7 @@ header {
 }
 
 .logo-pic {
-    width: 120%;
+    width: 100%;
 }
 
 .navbar-toggler {
@@ -288,3 +288,4 @@ button:hover span:after {
     text-align: center;
     height: auto;
 }
+

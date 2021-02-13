@@ -4,16 +4,87 @@
 }
 
 /* LOGO */ 
+
+.header-line-top {
+    width: 100%;
+    opacity: 1;
+    margin: 0;
+    border-width: 2px;
+    color: #4d4d4d;
+}
+
 header {
-    padding: 10px;
+    padding-bottom: 0;
 }
 
 .logo-pic {
-    width: 100%;
+    /* width: 100%; */
+    width: 310px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+#logo {
+    text-align: center;
+}
+
+.logo-pic-desktop {
+    display: none;
 }
 
 .navbar-toggler {
     border: none;
+}
+
+.navbar-toggler {
+    width: 50px;
+    margin: auto;
+}
+
+.navbar-toggler-icon::after {
+    display: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+a {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+a p{
+    padding-left: 10px;
+    margin: 0;
+    font-family: 'Open Sans';
+    font-weight: 100;
+}
+
+a:hover,
+a p:hover {
+    background-color: #fafafa;
+    color: #008B8B;
+}
+
+.navbar {
+    padding: 0;
+}
+
+/* .menu-line {
+    display: none;
+} */
+
+.menu-line {
+    color: black;
+    opacity: 1;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px;
 }
 
 /* INTRO */
@@ -64,7 +135,7 @@ hr {
 }
 
 .line {
-    width: 7%;
+    width: 20px;
     color: #B8860B;
     border-top: 1px solid;
     opacity: 0.7;
@@ -79,14 +150,27 @@ hr {
     font-weight: 400;
 }
 
-#experience img {
-    width: 50%;
+.edu-treehouse {
+    width: 200px;
 }
 
-#experience img:hover { 
-    transition-duration: 1s;
+#experience .skill img {
+    width: 150px;
+    animation : rotate 10s infinite;
+}
+
+@keyframes rotate {
+    from {
+    transform: rotateY(0deg);
+}   to {
     transform: rotateY(360deg);
 }
+}
+
+/* #experience img:hover { 
+    transition-duration: 1s;
+    transform: rotateY(360deg);
+} */
 
 .dash {
     border: none;
@@ -95,7 +179,7 @@ hr {
     width: 85%;
 }
 
-.skill {
+.skill-info {
     color: #B8860B;
     margin: 0;
     margin-top: 10px;
@@ -108,7 +192,15 @@ hr {
 }
 
 #portfolio {
-    background-image: linear-gradient(white, rgba(102,205,170, 0.2) 90%);
+    /* background-image: linear-gradient(white, rgba(102,205,170, 0.2) 90%); */
+    /* background: rgb(51,147,156);
+    background: linear-gradient(0deg, rgba(51,147,156,0.5508578431372548) 0%, rgba(255,255,255,1) 100%); */
+    /* background: rgb(51,147,156);
+    background: linear-gradient(0deg, rgba(51,147,156,0.29315476190476186) 0%, rgba(255,255,255,1) 100%); */
+    /* background: rgb(51,147,156);
+    background: linear-gradient(0deg, rgba(51,147,156,0.13068977591036413) 0%, rgba(255,255,255,1) 100%); */
+    background: rgb(51,147,156);
+    background: linear-gradient(0deg, rgba(51,147,156,0.2819502801120448) 0%, rgba(255,255,255,1) 100%);
     padding-bottom: 50px;
 }
 
@@ -125,7 +217,7 @@ hr {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(112, 128, 144, 0.50);
+    background: rgba(112, 128, 144, 0.80);
     color: #fff;
     visibility: hidden;
     opacity: 0;  
@@ -159,6 +251,10 @@ button {
     opacity: 1;
 }
 
+.img-wrap {
+    overflow: hidden;
+}
+
 button {
     margin: 15px 0;
     border-radius: 5px;
@@ -172,7 +268,8 @@ button {
 }
 
 button:focus {
-    outline-color: teal; 
+    outline-color: #B8860B; 
+    /* background-color: white; */
 }
   
 button span {
@@ -200,10 +297,18 @@ button:hover span:after {
     right: 0;
 }
 
+.long {
+    padding-top: 100px;
+}
+
+.short {
+    padding-top: 15px;
+}
+
 /* CONTACT */ 
 #contact {
-    background-color: #f8f8f8;
-    background-image: linear-gradient( white, #f8f8f8);
+    /* background-color: #f8f8f8; */
+    /* background-image: linear-gradient( white, #f8f8f8); */
     background-size: cover;
     margin-top: 50px;
 }
@@ -249,11 +354,13 @@ button:hover span:after {
 
 #logo-bottom {
     margin: auto;
-    max-width: 280px;
+    width: 280px;
+    margin-bottom: 50px;
 }
 
 #logo-bottom h3{
     font-family: 'Open Sans', sans-serif;
+    font-size: 1.43em;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: white;
@@ -276,6 +383,10 @@ button:hover span:after {
     text-decoration: underline;
 }
 
+.social-contact {
+    margin-bottom: 20px;
+}
+
 .location,
 .linkedin {
     width: 6%;
@@ -288,4 +399,263 @@ button:hover span:after {
     text-align: center;
     height: auto;
 }
+
+@media (min-width: 768px) {
+    .logo-pic {
+        /* display: none; */
+        width: 25%;
+        margin: auto;
+        text-align: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+    }
+
+    /* .logo-pic-desktop {
+        display: block;
+        width: 20%;
+    } */
+
+    #logo {
+        text-align: center;
+    }
+
+    .menu-line {
+        color: black;
+        opacity: 1;
+        width: 100%;
+        margin-bottom: 5px;
+        border: 1px;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    .navbar-nav {
+        margin: auto;
+        font-size: 0.9em;
+    }
+
+    a:hover,
+    a p:hover {
+    background-color: initial;
+    font-weight: 100;
+    color: #008B8B;
+}
+
+#experience .edu-treehouse {
+    max-width: 200px;
+}
+
+.education {
+    width: 400px;
+    margin: auto;
+}
+
+.skill {
+    width: 250px;
+    display: inline-block;
+    margin-top: 50px;
+    text-align: center;
+    margin: auto;
+}
+
+.skill-img {
+    width: 300%;
+}
+
+.img-wrap {
+    display: inline-block;
+    width: 300px;
+}
+
+.me {
+    width: 200px;
+}
+
+#contact {
+    width: 480px;
+    text-align: center;
+    margin: auto;
+    padding: 150px 0;
+}
+
+.social-contact {
+    width: 20%;
+    /* margin: 0 auto; */
+}
+
+/* #social-links h4 {
+    padding-top: 0;
+} */
+
+.social-contact h4 {
+    margin-bottom: 25px;
+}
+
+.location {
+width: 15%;
+margin-top: auto;
+}
+
+.linkedin {
+    width: 40%;
+}
+
+#social-links {
+    display: grid;
+    grid-template-columns: 140px 180px 140px 140px;
+    width: 600px;
+    margin: auto;
+}
+
+.social-contact {
+    width: 100%;
+}
+
+#logo-bottom {
+    margin: 0;
+    margin-bottom: 70px;
+    padding-left: 20px;
+    width: 300px;
+}
+
+.social-container {
+    width: 600px;
+    margin: auto;
+}
+
+#contact h3 {
+    font-size: 3em;
+}
+
+#contact {
+    width: 600px;
+}
+
+.long {
+    padding-top: 100px;
+}
+
+
+
+}
+
+@media(min-width: 1024px) {
+    #social {
+        padding-bottom: 0;
+    }
+
+    .social-container {
+        /* margin: initial; */
+        /* margin-left: 50px; */
+        width: 100%;
+    }
+
+    .logo-pic {
+        width: 18%;
+    }
+
+    #intro {
+        height: 475px;
+    }
+
+    #intro h2 {
+    font-size: 4em;
+    }
+
+    #about {
+        width: 800px;
+        margin: auto;
+        margin-bottom: 100px;
+    }
+
+    .break-line {
+        opacity: 0.2;
+        border: 1px;
+        width: 800px;
+    }
+
+    .dash {
+        display: none;
+    }
+
+    .skill {
+        margin-top: 50px;
+    }
+
+    .skill .html{
+        text-align: right;
+        justify-content: right;
+        justify-self: right;
+        justify-items: right;
+        margin-right: auto;
+    }
+
+    #experience .skill img {
+        width: 200px;
+        animation : rotate 10s infinite;
+    }
+
+    .img-wrap {
+        display: inline-block;
+        width: 500px;
+    }
+
+    .img-description p {
+        padding-bottom: 100px;
+    }
+
+    button{
+        margin: auto;
+        text-align: center;
+    }
+
+    .long {
+        padding-top: 200px;
+    }
+
+    .short h2{
+        margin-top: 0;
+    }
+
+    .short {
+        padding-top: 40px;
+    }
+
+    /* .img-description {
+        display: grid;
+        grid-template-rows: 100px 100px 70px 70px;
+        margin: auto;
+    } */
+
+    .box {
+        display: grid;
+        grid-template-rows: 80px 50px 100px 50px;
+        margin: auto;
+        width: 500px;
+        text-align: center;
+    }
+
+    .box h2 {
+        font-size: 1.7em;
+    }
+
+
+    #social-links{
+    grid-template-columns: 250px 250px 250px 250px; 
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    width:  1000px;     
+    /* margin: auto; */
+    }
+
+    .social-container {
+        width: 1000px;
+    }
+
+}
+
+
 

@@ -7,6 +7,7 @@
 
     <!-- style sheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
@@ -15,9 +16,36 @@
 
 <body>
     <header>
+        <hr class="header-line-top">
         <div id="logo">
             <img class="logo-pic" src="logo-black.jpg"> 
+            <img class="logo-pic-desktop" src="logo_desktop1.jpg">
         </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about"><p>About Me</p></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#experience"><p>Education & Skills</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio"><p>Personal Projects</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><p>Contact</p></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#social"><p>Social</p></a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <hr class="menu-line">
     </header>
     
     <main>
@@ -29,92 +57,108 @@
             <hr class="line">
             <p class="m-3">Graduated from Da Vinci Institute of Holistic Medicine with a B.S. in Holistic Medicine, then realised I love to code. I joined a Techdegree program in Treehouse and spent every second of my free time learning to code. Today I'm proudly looking for a job as a Junior Front End Web Developer.</p>
         </div>
-        <hr class="mb-5 mt-5">
+        <hr class="break-line mb-5 mt-5">
         <div id="experience" class="text-center"><h3>Education & Skills</h3>
             <hr class="line mb-4">
             <div class="education">
-                <img src="treehouse.svg">
+                <img class="edu-treehouse" src="treehouse.svg">
                 <p class="education-info m-3">Front-End Web Development Techdegree issued by Treehouse Inc., 2021.</p>
             </div>
             <hr class="dash">
-            <div>
-                <p class="skill">HTML</p>
-                <img src="html.svg">
-            </div>
-            <div>
-                <p class="skill">CSS</p>
-                <img src="css.svg">
-            </div>
-            <div>
-                <p class="skill">JavaScript</p>
-                <img src="js.svg">
+            <div class="skills-container">
+                <div class="skill">
+                    <p class="skill-info">HTML</p>
+                    <img class="skill-img html" src="html.svg">
+                </div>
+                <div class="skill">
+                    <p class="skill-info">CSS</p>
+                    <img class="skill-img css" src="css.svg">
+                </div>
+                <div class="skill">
+                    <p class="skill-info">JavaScript</p>
+                    <img class="skill-img js" src="js.svg">
+                </div>
             </div>
         </div>
-        <hr class="mb-5 mt-5">
+        <hr class="break-line mb-5 mt-5">
         <div id="portfolio" class="text-center"><h3>Personal Projects</h3>
             <hr class="line mb-3">
             <div class="project">
                 <div class="img-wrap">
                     <img src="project-1.png">
                     <div class="img-description">
-                        <h2>Responsive Portfolio</h2>
-                        <p>HTML & CSS</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
-                    </div>
-                </div>
-                <div class="img-wrap">
-                    <img src="project-2.png">
-                    <div class="img-description">
-                        <h2>Employee Directory</h2>
-                        <p>HTML & CSS</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
+                        <div class="box long">
+                            <h2>Responsive Portfolio</h2>
+                            <p>HTML & CSS</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="img-wrap">
                     <img src="project-3.png">
                     <div class="img-description">
-                        <h2>Web App Dashboard</h2>
-                        <p>HTML, CSS & JavaScript</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
+                        <div class="box long">
+                            <h2>Employee Directory</h2>
+                            <p>HTML & CSS</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-wrap">
+                    <img src="project-2.png">
+                    <div class="img-description">
+                        <div class="box short">
+                            <h2>Web App Dashboard</h2>
+                            <p>HTML, CSS & JavaScript</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="img-wrap">
                     <img src="project-4.png">
                     <div class="img-description">
-                        <h2>Game Show App</h2>
-                        <p>JavaScript</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
+                        <div class="box short">
+                            <h2>Game Show App</h2>
+                            <p>JavaScript</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="img-wrap">
                     <img src="project-5.png">
                     <div class="img-description">
-                        <h2>Responsive Web Form</h2>
-                        <p>HTML & CSS</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
+                        <div class="box long">
+                            <h2>Responsive Web Form</h2>
+                            <p>HTML & CSS</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="img-wrap">
                     <img src="project-6.png">
                     <div class="img-description">
-                        <h2>Responsive Style Guide</h2>
-                        <p>HTML & SASS</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
+                        <div class="box long">
+                            <h2>Responsive Style Guide</h2>
+                            <p>HTML & SASS</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
                     </div>
                 </div>
                 <div class="img-wrap">
                     <img src="project-7.png">
                     <div class="img-description">
-                        <h2>Photo Gallery</h2>
-                        <p>HTML, CSS & JavaScript</p>
-                        <button><span>See the Site</span></button>
-                        <button><span>See the Code</span></button>
+                        <div class="box short">
+                            <h2>Photo Gallery</h2>
+                            <p>HTML, CSS & JavaScript</p>
+                            <button><span>See the Site</span></button>
+                            <button><span>See the Code</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -130,26 +174,43 @@
             <p class="contact-button m-0 pb-5">Contact Me</p>
         </div>
 
-        <div id="social" class="pt-5 pb-5">
-            <div id="logo-bottom">
-                <h3>Tech Vision Studio</h3>
-                <h4>By Gintare</h4>
-            </div>
-            <div id="social-links" class="text-center pt-5">
-                <h4>Location</h4>
-                <div>
-                <svg class="location" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg><p>Vilnius, LT</p></div>
-                <h4 class="pt-3">Email</h4>
-                <p>gintareauks@gmail.com</p>
-                <h4 class="pt-3">LinkedIn</h4>
-                <!-- <img class="linkedin" src="linkedin.svg"> -->
-                <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <h4 class="pt-3">Treehouse</h4>
-                <svg class="treehouse-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
-                    <path d="M24 5l-2-1c-1 0-2 1-3 2l-2 2v4h1c0 1 1 1 1 2h1c0 1 0 2-1 2-1 1-2 0-2-1h-1c1-1 0-1 0-2-1-1-2 1-2 2h0l-1 2c1 1 1 2 0 2-1 1-3 1-3 0-1-1 0-2 1-3v-1l1-1 1-3-1 2c0-1-1-1-1 0h-1c0 1-1 1-1 1v1c-1 1-2 0-3 0 0-1 0-2 1-2v-1c1 0 2-1 3-1h1l2-2-2 1H9v1c-1 0-2 0-3-1 0 0 0-1 1-2h4c1 0 3-1 3-2l2-2V1l-2-1h-2L2 5c0 1-1 1-1 2v10c0 1 1 1 1 2l10 5h2l10-5c0-1 1-1 1-2V7c0-1-1-1-1-2z"/>
-                </svg>
+        <div id="social" class="pt-5 pb-5 pb-lg-3">
+            <div class="social-container">
+                <div id="logo-bottom">
+                    <h3>Tech Vision Studio</h3>
+                    <h4>By Gintare</h4>
+                </div>
+                <div id="social-links" class="text-center pt-s-5">
+                    <div class="social-contact">
+                        <h4 class="pt-s-3 mb-md-0">Location</h4>
+                        <div class="location-container">
+                            <svg class="location" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg><p>Vilnius, LT</p>
+                        </div>
+                    </div>
+
+                    <div class="social-contact">
+                        <h4 class="pt-s-3">Email</h4>
+                        <p>gintareauks@gmail.com</p>
+                    </div>
+
+                    <div class="social-contact">
+                        <h4 class="pt-s-3">LinkedIn</h4>
+                        <!-- <img class="linkedin" src="linkedin.svg"> -->
+                        <svg class="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h4 class="pt-s-3">Treehouse</h4>
+                        <svg class="treehouse-icon" xmlns="http://www.w3.org/2000/svg" width="25" height="25">
+                        <path d="M24 5l-2-1c-1 0-2 1-3 2l-2 2v4h1c0 1 1 1 1 2h1c0 1 0 2-1 2-1 1-2 0-2-1h-1c1-1 0-1 0-2-1-1-2 1-2 2h0l-1 2c1 1 1 2 0 2-1 1-3 1-3 0-1-1 0-2 1-3v-1l1-1 1-3-1 2c0-1-1-1-1 0h-1c0 1-1 1-1 1v1c-1 1-2 0-3 0 0-1 0-2 1-2v-1c1 0 2-1 3-1h1l2-2-2 1H9v1c-1 0-2 0-3-1 0 0 0-1 1-2h4c1 0 3-1 3-2l2-2V1l-2-1h-2L2 5c0 1-1 1-1 2v10c0 1 1 1 1 2l10 5h2l10-5c0-1 1-1 1-2V7c0-1-1-1-1-2z"/>
+                        </svg>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

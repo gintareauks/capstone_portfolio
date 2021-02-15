@@ -106,6 +106,12 @@ a p:hover {
     padding: 5px;
 }
 
+.ml12 .letter {
+    /* display: inline-block;
+    line-height: 1em; */
+    color: white;
+  }
+
 /* ABOUT, EXPERIENCE, PORTFOLIO */
 #about, 
 #experience, 
@@ -386,25 +392,53 @@ button:hover span:after {
     font-size: 0.2em;
 }
 
+.location-icon {
+    fill: white;
+}
+
 .email {
     text-transform: lowercase;
 }
 
 .email:hover {
-    background-color: none;
+    background-color: unset !important;
+    color: teal;
 }
 
-.linkedin:hover {
+.linkedin path:hover {
     fill: teal;
+    background-color: unset !important;
+    color: unset !important;
 }
 
-.location:hover {
-    fill:teal;
+.linkedin {
+    background-color: unset !important;
+    color: unset !important;
 }
 
 .treehouse-icon path:hover {
     fill: teal;
+    background-color: unset !important;
+    color: unset !important;
 }
+
+.treehouse-icon:hover {
+    background-color: unset !important;
+    color: unset !important;
+}
+
+.location:hover {
+    background-color: unset !important;
+    color: teal;
+}
+
+.location-info:hover {
+    color: teal;
+    background-color: unset !important;
+    
+}
+
+
 
 .github {
     fill: white;
@@ -412,6 +446,13 @@ button:hover span:after {
 
 .github:hover {
     fill: teal;
+    background-color: unset !important;
+    color: unset !important;
+}
+
+.github path:hover {
+    background-color: unset !important;
+    color: unset !important;
 }
 
 #social-links h4 {
@@ -424,9 +465,9 @@ button:hover span:after {
 
 .location,
 .linkedin {
-    width: 6%;
+    /* /* width: 6%; */
     fill: white;
-    display: inline-block;
+    display: inline-block; */
 }
 
 .treehouse-icon path{
@@ -530,10 +571,10 @@ button:hover span:after {
     margin-bottom: 25px;
 }
 
-.location {
-width: 15%;
+/* .location {
+width: 100%;
 margin-top: auto;
-}
+} */
 
 .linkedin {
     width: 40%;

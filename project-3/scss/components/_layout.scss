@@ -1,0 +1,18 @@
+body {
+    position: relative;
+    padding-bottom: 50px;
+    background-color: $color-layout;
+}
+
+@media (min-width: $laptop) {
+    .wrap {
+        width: 930px;
+        margin: auto;
+    }
+}
+
+@media(min-width: 1440px) {
+    .wrap {
+        width: 1140px;
+    }
+}

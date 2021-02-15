@@ -1,0 +1,32 @@
+body {
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+}
+
+#search {
+    font-size: 1em;
+    width: 50%;
+    min-width: 250px;
+    height: 50px;
+    margin: 30px auto;
+    display: block;
+    border-radius: 5px;
+    border: 2px solid lightgrey; 
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+.thumbnail {
+    transition-duration: 1s;
+}
+
+.thumbnail:hover {
+    -webkit-filter: brightness(60%);
+}
+

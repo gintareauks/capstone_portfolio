@@ -1,0 +1,43 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    color: $color-primary;
+    font-size: 0.6em;
+    font-weight: 100;
+    & h1 {
+        font-weight: 400;
+    }
+}
+
+#search {
+    font-size: 1.4em;
+}
+
+.text-container {
+    & h2 {
+        font-size: 1.05em;
+        color: $color-primary;
+    } & p {
+        font-size: 0.8em;
+        color: $color-secondary;
+    }
+}
+
+.modal-text-container {
+    & h2 {
+        font-size: 1.05em;
+        color: $color-primary;
+    } & p {
+        font-size: 0.8em;
+        color: $color-secondary;
+    }
+}
+
+button {
+    color: $color-primary;
+    &:hover {
+        color: $color-button-hover;
+    }
+}

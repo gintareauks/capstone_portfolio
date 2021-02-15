@@ -1,0 +1,61 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $color-overlay;
+}
+
+.modal {
+    margin: 15% auto auto;
+    position: relative;
+    text-align: center;
+    background: $color-modal-background;
+    border: 1px solid $color-modal-border;
+    border-radius: 5px;
+    padding: 30px 20px;
+    max-width: 70%;  
+    &-close {
+        position: absolute;
+        right: 15px;
+        top: 5px;
+        cursor: pointer;
+    } &-text-container {
+        text-align: center;
+        & h2 {
+            margin-bottom: 8px;
+        } & p {
+            margin: 5px 0;
+        }
+    }
+}
+ 
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid $color-secondary;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    &:hover {
+        background-color: $color-outline;
+    } &:focus {
+        outline: none; 
+    }
+}
+
+
+@media (min-width: $tablet) {
+    .modal {
+        width: 375px;
+    }
+}

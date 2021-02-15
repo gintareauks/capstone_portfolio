@@ -379,6 +379,41 @@ button:hover span:after {
     margin: 0;
 }
 
+.email,
+.location-container p {
+    text-transform: capitalize;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.2em;
+}
+
+.email {
+    text-transform: lowercase;
+}
+
+.email:hover {
+    background-color: none;
+}
+
+.linkedin:hover {
+    fill: teal;
+}
+
+.location:hover {
+    fill:teal;
+}
+
+.treehouse-icon path:hover {
+    fill: teal;
+}
+
+.github {
+    fill: white;
+}
+
+.github:hover {
+    fill: teal;
+}
+
 #social-links h4 {
     text-decoration: underline;
 }
@@ -399,6 +434,7 @@ button:hover span:after {
     text-align: center;
     height: auto;
 }
+
 
 @media (min-width: 768px) {
     .logo-pic {
@@ -505,8 +541,8 @@ margin-top: auto;
 
 #social-links {
     display: grid;
-    grid-template-columns: 140px 180px 140px 140px;
-    width: 600px;
+    grid-template-columns: 140px 180px 140px 140px 140px;
+    width: 740px;
     margin: auto;
 }
 
@@ -518,17 +554,18 @@ margin-top: auto;
     margin: 0;
     margin-bottom: 70px;
     padding-left: 20px;
-    width: 300px;
+    width: 320px;
 }
 
 .social-container {
-    width: 600px;
+    width: 740px;
     margin: auto;
 }
 
 #contact h3 {
     font-size: 3em;
 }
+
 
 #contact {
     width: 600px;
@@ -537,8 +574,6 @@ margin-top: auto;
 .long {
     padding-top: 100px;
 }
-
-
 
 }
 
@@ -642,9 +677,8 @@ margin-top: auto;
         font-size: 1.7em;
     }
 
-
     #social-links{
-    grid-template-columns: 250px 250px 250px 250px; 
+    grid-template-columns: 200px 200px 200px 200px 200px; 
     /* text-align: center; */
     /* margin: 0 auto; */
     width:  1000px;     

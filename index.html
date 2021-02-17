@@ -16,155 +16,174 @@
 
 <body>
     <header>
-        <hr class="header-line-top">
-        <div id="logo">
-            <img class="logo-pic" src="logo-black.jpg"> 
-            <img class="logo-pic-desktop" src="logo_desktop1.jpg">
+        <hr class="header-line-top m-0">
+        <div id="logo-container" class="text-center">
+            <img class="logo py-1 px-3" src="images/logo.jpg"> 
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about"><p>About Me</p></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#experience"><p>Education & Skills</p></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#portfolio"><p>Personal Projects</p></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact"><p>Contact</p></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#social"><p>Social</p></a>
-                </li>
-            </ul>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-md-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">
+                            <p class="pl-3 m-0">About Me</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">
+                            <p class="pl-3 m-0">Education & Skills</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">
+                            <p class="pl-3 m-0">Personal Projects</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        <p class="pl-3 m-0">Contact</p>
+                    </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">
+                            <p class="pl-3 m-0">Social</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
-        <hr class="menu-line">
+        <hr class="header-line-bottom mt-0 mb-1">
     </header>
     
     <main>
         <div id="intro">
-            <h2 class=" ml12 text-center">Your Next Web Developer</h2>
+            <h2 class="ml12 text-center m-auto p-1">Your Next Web Developer</h2>
         </div>
 
-    
-
-        
-
-
-
-        <div id="about" class="text-center">
-            <h3>About Me</h3>
-            <hr class="line">
-            <p class="m-3">Graduated from Da Vinci Institute of Holistic Medicine with a B.S. in Holistic Medicine, then realised I love to code. I joined a Techdegree program in Treehouse and spent every second of my free time learning to code. Today I'm proudly looking for a job as a Junior Front End Web Developer.</p>
+        <div id="about" class="text-center m-lg-auto">
+            <h3 class="mt-5 mx-0 mb-3">About Me</h3>
+            <hr class="line m-auto mb-md-4">
+            <p class="mt-4 mb-5 mx-3 m-md-auto">Graduated from Da Vinci Institute of Holistic Medicine with a B.S. in Holistic Medicine, then realised I love to code. I joined a Techdegree program in Treehouse and spent every second of my free time learning to code. Today I'm proudly looking for a job as a Junior Front End Web Developer.</p>
         </div>
-        <hr class="break-line mb-5 mt-5">
-        <div id="experience" class="text-center"><h3>Education & Skills</h3>
-            <hr class="line mb-4">
-            <div class="education">
-                <img class="edu-treehouse" src="treehouse.svg">
+
+        <hr class="break-line m-auto mt-md-5">
+
+        <div id="experience" class="text-center"><h3 class="mt-5 mx-0 mb-3">Education & Skills</h3>
+            <hr class="line m-auto mb-4">
+            <div class="education mt-3 m-md-auto pt-md-4">
+                <img class="edu-treehouse mt-2" src="svg/treehouse.svg">
                 <p class="education-info m-3">Front-End Web Development Techdegree issued by Treehouse Inc., 2021.</p>
             </div>
-            <hr class="dash">
-            <div class="skills-container">
+
+            <hr class="line-dash m-auto">
+
+            <div class="skills-container mb-md-5">
                 <div class="skill">
-                    <p class="skill-info">HTML</p>
-                    <img class="skill-img html" src="html.svg">
+                    <p class="skill-info mt-3 mb-0">HTML</p>
+                    <img class="skill-img html mb-md-5" src="svg/html.svg">
                 </div>
+
                 <div class="skill">
-                    <p class="skill-info">CSS</p>
-                    <img class="skill-img css" src="css.svg">
+                    <p class="skill-info m-0">CSS</p>
+                    <img class="skill-img css" src="svg/css.svg">
                 </div>
+
                 <div class="skill">
-                    <p class="skill-info">JavaScript</p>
-                    <img class="skill-img js" src="js.svg">
+                    <p class="skill-info m-0">JavaScript</p>
+                    <img class="skill-img js mb-5" src="svg/js.svg">
                 </div>
             </div>
         </div>
-        <hr class="break-line mb-5 mt-5">
-        <div id="portfolio" class="text-center"><h3>Personal Projects</h3>
-            <hr class="line mb-3">
-            <div class="project">
+
+        <hr class="break-line m-auto">
+
+        <div id="portfolio" class="text-center pb-5"><h3 class="mt-5 mx-0 mb-3">Personal Projects</h3>
+            <hr class="line m-auto mb-5">
+            <div class="project mt-3">
                 <div class="img-wrap">
-                    <img src="project-1.png">
+                    <img src="personal_projects/project_screenshots/project_1.png">
                     <div class="img-description">
-                        <div class="box long">
-                            <h2>Responsive Portfolio</h2>
-                            <p>HTML & CSS</p>
-                            <a href="project-1/project-1.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/Responsive-Layout-Project" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box long pt-5 mt-md-5">
+                            <h2 class="m-auto">Responsive Portfolio</h2>
+                            <p class="m-auto">HTML & CSS</p>
+                            <div class="buttons mt-md-5">
+                                <a href="personal_projects/project_1/project-1.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                                <a href="https://github.com/gintareauks/Responsive-Layout-Project" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="project-3.png">
+                    <img src="personal_projects/project_screenshots/project_2.png">
                     <div class="img-description">
-                        <div class="box long">
-                            <h2>Employee Directory</h2>
-                            <p>HTML & CSS</p>
-                            <a href="project-2/index.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/web_app_dashboard_v3" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box long pt-5 mt-md-5">
+                            <h2 class="m-auto">Web App Dashboard</h2>
+                            <p class="m-auto">HTML, CSS & JavaScript</p>
+                            <div class="buttons mt-md-5">
+                                <a href="personal_projects/project_2/index.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                                <a href="https://github.com/gintareauks/web_app_dashboard_v3" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="project-2.png">
+                    <img src="personal_projects/project_screenshots/project_3.png">
                     <div class="img-description">
-                        <div class="box short">
-                            <h2>Web App Dashboard</h2>
-                            <p>HTML, CSS & JavaScript</p>
-                            <a href="project-3/index.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/employee_directory_v1" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box short pt-2">
+                            <h2 class="m-auto">Employee Directory</h2>
+                            <p class="m-auto">HTML & CSS</p>
+                            <a href="personal_projects/project_3/index.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                            <a href="https://github.com/gintareauks/employee_directory_v1" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="project-4.png">
+                    <img src="personal_projects/project_screenshots/project_4.png">
                     <div class="img-description">
-                        <div class="box short">
-                            <h2>Game Show App</h2>
-                            <p>JavaScript</p>
-                            <a href="project-4/index.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/game_show_app_v1" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box short pt-2">
+                            <h2 class="m-auto">Game Show App</h2>
+                            <p class="m-auto">JavaScript</p>
+                            <a href="personal_projects/project_4/index.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                            <a href="https://github.com/gintareauks/game_show_app_v1" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="project-5.png">
+                    <img src="personal_projects/project_screenshots/project_5.png">
                     <div class="img-description">
-                        <div class="box long">
-                            <h2>Responsive Web Form</h2>
-                            <p>HTML & CSS</p>
-                            <a href="project-5/index.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/online_registration_v4" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box long pt-5 pt-5 mt-md-5">
+                            <h2 class="m-auto">Responsive Web Form</h2>
+                            <p class="m-auto">HTML & CSS</p>
+                            <div class="buttons mt-md-5">
+                                <a href="personal_projects/project_5/index.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                                <a href="https://github.com/gintareauks/online_registration_v4" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="project-6.png">
+                    <img src="personal_projects/project_screenshots/project_6.png">
                     <div class="img-description">
-                        <div class="box long">
-                            <h2>Responsive Style Guide</h2>
-                            <p>HTML & SASS</p>
-                            <a href="project-6/index.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/style_guide_v7-2" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box long pt-5 pt-5 mt-md-5">
+                            <h2 class="m-auto">Responsive Style Guide</h2>
+                            <p class="m-auto">HTML & SASS</p>
+                            <div class="buttons mt-md-5">
+                                <a href="personal_projects/project_6/index.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                                <a href="https://github.com/gintareauks/style_guide_v7-2" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="project-7.png">
+                    <img src="personal_projects/project_screenshots/project_7.png">
                     <div class="img-description">
-                        <div class="box short">
-                            <h2>Photo Gallery</h2>
-                            <p>HTML, CSS & JavaScript</p>
-                            <a href="project-7/index.html" target="_blank"><button><span>See the Site</span></button></a>
-                            <a href="https://github.com/gintareauks/photo_gallery_v5" target="_blank"><button><span>See the Code</span></button></a>
+                        <div class="box short pt-2">
+                            <h2 class="m-auto">Photo Gallery</h2>
+                            <p class="m-auto">HTML, CSS & JavaScript</p>
+                            <a href="personal_projects/project_7/index.html" target="_blank"><button class="mt-3"><span>See the Site</span></button></a>
+                            <a href="https://github.com/gintareauks/photo_gallery_v5" target="_blank"><button class="mt-3"><span>See the Code</span></button></a>
                         </div>
                     </div>
                 </div>
@@ -174,47 +193,47 @@
     </main>
 
     <footer>
-        <div id="contact" class="text-center">
-            <img class="me" src="me.jpg">
+        <div id="contact" class="text-center mt-5 m-md-auto py-md-5 px-md-0">
+            <img class="me mt-md-5" src="images/me.jpg">
             <h3 class="pt-4">Get In Touch</h3>
             <p class="contact-info m-3">If You are interested in working together or have any questions, I'd love for You to reach out!</p>
             <p class="contact-button m-0 pb-5">Contact Me</p>
         </div>
 
-        <div id="social" class="pt-5 pb-5 pb-lg-3">
-            <div class="social-container">
-                <div id="logo-bottom">
+        <div id="social" class="pt-5 pb-5 pb-lg-5">
+            <div class="social-container m-md-auto">
+                <div id="logo-bottom" class="m-auto m-md-0 pb-md-5 pl-md-5">
                     <h3>Tech Vision Studio</h3>
                     <h4>By Gintare</h4>
                 </div>
-                <div id="social-links" class="text-center pt-s-5">
-                    <div class="social-contact">
-                        <h4 class="pt-s-3 mb-md-0">Location</h4>
+                <div id="social-links" class="text-center pt-s-5 m-md-auto">
+                    <div class="social-contact mb-0">
+                        <h4 class="mt-5 pt-s-3 pt-md-4 mb-md-0 mt-md-0">Location</h4>
                         <div class="location-container">
                             <div class="loc-icon-container"><svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg></div>
-                            <div class="loc-info-container"><a class="location" href="https://goo.gl/maps/YxPAedLrLRfQ1RpR8" target="_blank"><p class="location-info">Vilnius, LT</p></a></div>
+                            <div class="loc-info-container"><a class="location" href="https://goo.gl/maps/YxPAedLrLRfQ1RpR8" target="_blank"><p class="location-info m-0">Vilnius, LT</p></a></div>
                         </div>
                     </div>
 
                     <div class="social-contact">
-                        <h4 class="pt-s-3">Email</h4>
-                        <a href="mailto: gintareauks@gmail.com"><p class="email">gintareauks@gmail.com</p></a>
+                        <h4 class="pt-4 pt-s-3">Email</h4>
+                        <a href="mailto: gintareauks@gmail.com"><p class="email m-0">gintareauks@gmail.com</p></a>
                     </div>
 
                     <div class="social-contact">
-                        <h4 class="pt-s-3">LinkedIn</h4>
+                        <h4 class="pt-4 pt-s-3">LinkedIn</h4>
                         <!-- <img class="linkedin" src="linkedin.svg"> -->
                         <a class="linkedin" href="https://www.linkedin.com/in/gintare-aukstikalnyte-538065120" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
                     </div>
                     
-                    <div class="social-contact">
-                        <h4 class="pt-s-3">Treehouse</h4>
+                    <div class="social-contact treehouse-container">
+                        <h4 class="pt-4 pt-s-3">Treehouse</h4>
                         <a class="treehouse-icon" href="https://teamtreehouse.com/gintare" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25">
-                        <path d="M24 5l-2-1c-1 0-2 1-3 2l-2 2v4h1c0 1 1 1 1 2h1c0 1 0 2-1 2-1 1-2 0-2-1h-1c1-1 0-1 0-2-1-1-2 1-2 2h0l-1 2c1 1 1 2 0 2-1 1-3 1-3 0-1-1 0-2 1-3v-1l1-1 1-3-1 2c0-1-1-1-1 0h-1c0 1-1 1-1 1v1c-1 1-2 0-3 0 0-1 0-2 1-2v-1c1 0 2-1 3-1h1l2-2-2 1H9v1c-1 0-2 0-3-1 0 0 0-1 1-2h4c1 0 3-1 3-2l2-2V1l-2-1h-2L2 5c0 1-1 1-1 2v10c0 1 1 1 1 2l10 5h2l10-5c0-1 1-1 1-2V7c0-1-1-1-1-2z"/>
+                        <path class="text-center" d="M24 5l-2-1c-1 0-2 1-3 2l-2 2v4h1c0 1 1 1 1 2h1c0 1 0 2-1 2-1 1-2 0-2-1h-1c1-1 0-1 0-2-1-1-2 1-2 2h0l-1 2c1 1 1 2 0 2-1 1-3 1-3 0-1-1 0-2 1-3v-1l1-1 1-3-1 2c0-1-1-1-1 0h-1c0 1-1 1-1 1v1c-1 1-2 0-3 0 0-1 0-2 1-2v-1c1 0 2-1 3-1h1l2-2-2 1H9v1c-1 0-2 0-3-1 0 0 0-1 1-2h4c1 0 3-1 3-2l2-2V1l-2-1h-2L2 5c0 1-1 1-1 2v10c0 1 1 1 1 2l10 5h2l10-5c0-1 1-1 1-2V7c0-1-1-1-1-2z"/>
                         </svg></a>
                     </div>
-                    <div class="social-contact">
-                        <h4 class="pt-s-3">GitHub</h4>
+                    <div class="social-contact github-container">
+                        <h4 class=" pt-4 pt-s-3">GitHub</h4>
                         <a class="github" href="https://github.com/gintareauks" target="_blank">
                         <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
                     </div>

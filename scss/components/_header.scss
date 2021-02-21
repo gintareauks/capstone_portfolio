@@ -1,0 +1,57 @@
+.header-line {
+    &-top {
+        width: 100%;
+        border-width: 2px;
+    }
+    &-bottom {
+        width: 100%;
+        border: 1px;
+    }
+}
+
+.logo {
+    width: 310px;
+}
+
+.navbar-toggler {
+    border: none;
+    width: 50px;
+    &:focus {
+        box-shadow: none;
+    }
+    &-icon::after {
+        display: none;
+    }
+}
+
+a:hover,
+a p:hover {
+    background-color: #fafafa;
+}
+
+#intro {
+    display: flex;
+    background-image: url("../images/web.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 300px;
+    opacity: 0.8;
+}
+
+@media(min-width: $laptop) {
+    .logo-pic {
+        width: 18%;
+    }
+    
+    #intro {
+        height: 475px;
+    }
+
+    a:hover,
+    a p:hover {
+    background-color: initial;
+}
+}
+

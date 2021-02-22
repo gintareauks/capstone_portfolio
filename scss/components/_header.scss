@@ -33,11 +33,17 @@ a p:hover {
     display: flex;
     background-image: url("../images/web.jpg");
     background-size: cover;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 300px;
     opacity: 0.8;
+    height: 250px;
+}
+
+@media(min-width: $tablet) {
+    #intro {
+        height: 300px;
+        background-position: 50% 50%;
+
+    }
 }
 
 @media(min-width: $laptop) {
@@ -52,6 +58,11 @@ a p:hover {
     a:hover,
     a p:hover {
     background-color: initial;
+}
+
+#intro {
+    background-attachment: fixed;
+    height: 450px;
 }
 }
 

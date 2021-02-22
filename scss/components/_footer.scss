@@ -4,6 +4,9 @@
 
 #logo-bottom {
     width: 280px;
+    & h3 {
+        width: 100%;
+    }
 }
 
 .location-icon {

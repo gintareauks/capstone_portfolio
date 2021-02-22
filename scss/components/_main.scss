@@ -76,12 +76,16 @@ button {
     opacity: 1;
 }
 
-button {
+span {
+    width: 100%;
+}
+
+ button{
     border-radius: 5px 5px;
     border: none;
     height: 60px;
     background-color: rgba(245, 245, 245, 0.80);
-    width: 220px;
+    width: 70%;
     transition: all 0.5s;
     cursor: pointer;
     &:focus {
@@ -139,7 +143,7 @@ button {
 
 @media (min-width: $tablet) {
     #about {
-        height: 250px;
+        height: 300px;
         & p {
             width: 750px; 
         }

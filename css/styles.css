@@ -451,6 +451,15 @@ button:focus {
   outline-color: #008B8B;
 }
 
+#contact-btn {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.contact-button {
+  font-family: 'Cormorant Garamond', serif;
+}
+
 #contact h3 {
   font-size: 1.8em;
   font-weight: 600;
@@ -538,8 +547,8 @@ button:focus {
   .navbar-nav {
     font-size: 0.9em;
   }
-  a:hover,
-  a p:hover {
+  .navbar a:hover,
+  .navbar a p:hover {
     font-weight: 100;
     color: #008B8B;
   }
@@ -730,6 +739,14 @@ button:hover span:after {
   right: 0;
 }
 
+.contact-button {
+  padding: 0;
+}
+
+.contact-button:hover {
+  background-color: initial;
+}
+
 #contact {
   background-size: cover;
 }
@@ -737,6 +754,18 @@ button:hover span:after {
 .me {
   border-radius: 10px;
   max-width: 50%;
+}
+
+#scrollToTop {
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  width: 20px;
+  height: 100%;
+  fill: teal;
+}
+
+#up-container {
+  text-align: right;
 }
 
 @media (min-width: 768px) {

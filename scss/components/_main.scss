@@ -110,6 +110,13 @@ button {
     }
 }
 
+.contact-button {
+    padding: 0;
+    &:hover {
+        background-color: initial;
+    }
+}
+
 #contact {
     background-size: cover;
 }
@@ -117,6 +124,17 @@ button {
 .me {
     border-radius: 10px;
     max-width: 50%;
+}
+
+#scrollToTop {
+    cursor: pointer; /* Add a mouse pointer on hover */
+    width: 20px;
+    height: 100%;
+    fill: teal;
+}
+
+#up-container {
+    text-align: right;
 }
 
 @media (min-width: $tablet) {

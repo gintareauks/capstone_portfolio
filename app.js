@@ -1,4 +1,7 @@
 var textWrapper = document.querySelector('.ml12');
+var scrollToTopBtn = document.getElementById("scrollToTop");
+var rootElement = document.documentElement;
+
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({})
@@ -10,4 +13,14 @@ anime.timeline({})
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 2000 + 100 * i
-  })
+  });
+
+  
+  function scrollToTop() {
+    rootElement.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+  
+  scrollToTopBtn.addEventListener("click", scrollToTop);

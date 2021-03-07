@@ -251,11 +251,6 @@ header a {
 
 /* Footer */ 
 
-.footer-wrapper {
-    width: 90%;
-    margin: auto;
-}
-
 .bigger-screen {
     float: right;
     display: inline;
@@ -368,5 +363,19 @@ header ul {
     margin: auto;
     padding-bottom: 30px;
 }
+
+
+/* footer */
+
+footer {
+    padding: 0 0 20px;
+
+}
+
+
+
+
+
+
 
 }

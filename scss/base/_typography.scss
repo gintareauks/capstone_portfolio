@@ -11,16 +11,11 @@
 a {
     font-size: 1.1em;
     text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-weight: 100;  
     &:hover {
-        color: $color-text-tertiary
+        color: $color-text-tertiary !important;
     }
-    & p {
-        font-family: 'Open Sans';
-        font-weight: 100;
-        &:hover {
-            color: $color-text-tertiary;
-        }
-    } 
 }
 
 .header-line-bottom {
@@ -37,23 +32,25 @@ a {
     color: $color-text-secondary;
 }
 
-#about, 
-#experience, 
-#portfolio {
+#about-container, 
+#experience-container, 
+#portfolio-container,
+#skills-container {
     font-size: 2em;
     font-weight: 900;
 }
 
-#about h3,
-#experience h3,
-#portfolio h3 {
+#about-container h3,
+#experience-container h3,
+#portfolio-container h3,
+#skills-container h3 {
     font-weight: 900;
-    font-size: 0.9em;
+    font-size: 1em;
     font-family: 'Poiret One', cursive;
 }
 
-#about p {
-    font-size: 0.7em;
+#about-container p {
+    font-size: 0.67em;
     font-weight: 400;
 }
 
@@ -69,6 +66,22 @@ a {
     font-size: 0.7em;
     font-weight: 400;
 }
+
+.year h2 {
+    font-size: 0.7em;
+}
+
+
+.info {
+    &-1 {
+        font-weight: 900;
+        font-size: 0.9em; 
+    }
+    &-2 {
+        font-size: 0.8em;
+    }
+}
+
 
 .skill-info {
     color: $color-text-dextail;
@@ -105,7 +118,7 @@ button:focus {
 
 }
 
-#contact h3 {
+#contact-container h3 {
     font-size: 1.8em;
     font-weight: 600;
     font-family: 'Poiret One', cursive;
@@ -198,7 +211,7 @@ button:focus {
 
 
 @media (min-width: $tablet) {
-    .navbar-nav {
+     .navbar-nav {
         font-size: 0.9em;
     }
 
@@ -208,7 +221,24 @@ button:focus {
     color: $color-text-tertiary;
     }
 
-    #contact h3 {
+    #skills-container {
+        height: 350px;
+    }
+
+    .year h2 {
+        font-size: 1.1em;
+    }
+
+    .info {
+        &-1 {
+            font-size: 1.1em;
+        }
+        &-2 {
+            font-size: 0.9em;
+        }
+    }
+
+    #contact-container h3 {
         font-size: 3em;
     }
 }
@@ -221,4 +251,8 @@ button:focus {
     .box h2 {
         font-size: 1.7em;
     }
+
+    .active {
+        color: $color-text-tertiary !important;
+      }
 }

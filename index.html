@@ -15,106 +15,124 @@
 
 <body>
     <header>
-        <hr class="header-line-top m-0">
-        <div id="logo-container" class="text-center">
-            <img class="logo py-1 px-3" src="images/logo.jpg" alt="logo"> 
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light p-0">
-            <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-md-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">
-                            <p class="pl-3 m-0">About Me</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">
-                            <p class="pl-3 m-0">Education & Skills</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">
-                            <p class="pl-3 m-0">Personal Projects</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#contact">
-                        <p class="pl-3 m-0">Contact</p>
-                    </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#social">
-                            <p class="pl-3 m-0">Social</p>
-                        </a>
-                    </li>
-                </ul>
+        <div id="nav-container">
+            <hr class="header-line-top m-0">
+            <div id="logo-container" class="text-center">
+                <img id="logo" class="logo py-1 px-3" src="images/logo.jpg" alt="logo"> 
             </div>
-        </nav>
-        <hr class="header-line-bottom mt-0 mb-1">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <button class="navbar-toggler m-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-md-auto">
+                        <li class="nav-item">
+                            <a class="nav-link about pl-3 m-0" href="#about">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-3 m-0" href="#experience">Education & Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-3 m-0" href="#portfolio">Personal Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pl-3 m-0" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <hr class="header-line-bottom mt-0 mb-1">
+        </div>
+
         <div id="intro">
             <h2 class="ml12 text-center m-auto p-1">Your Next Web Developer</h2>
         </div>
     </header>
     
+
+
+
     <main>
-        <div id="about" class="text-center m-lg-auto">
+        <div id="about" class="offsetfix section"></div>
+        <div id="about-container" class="text-center mt-lg-5 pt-lg-3">
             <h3 class="mt-5 mx-0 mb-3">About Me</h3>
-            <hr class="line m-auto mb-md-4">
-            <p class="mt-4 mb-5 mx-3 m-md-auto">Graduated from Da Vinci Institute of Holistic Medicine with a B.S. in Holistic Medicine. Soon enough, I became very interested and inspired to learn how to code, so I got serious and joined a Techdegree program at Team Treehouse. I spent every minute of my free time learning how to code and today I'm finally looking for a job as a Junior Front End Web Developer. I'm a hard working person who is very excited to keep on learning, improving and never stop growing. </p>
+            <hr class="line m-auto mb-md-5">
+            <p class="mt-4 mb-1 mx-4 mx-md-auto">Since I was a child I was continuously exploring, trying and learning new things: from creative activities to nature sciences to natural medicine and health. However, while discovering web development and learning how to code, I have found the perfect balance that I was always looking for - the balance between creativity and problem solving.</p>
+            <p class="mt-4 mb-5 mx-4 mx-md-auto mb-md-5">I recently graduated with a Techdegree in Front-End Web Development at Team Treehouse and I am now looking for a job as a Junior Front-End Web Developer. To move forward with my learning journey to web development, I have also started studying for a Full-Stack JavaScript Techdegree. </p>
         </div>
 
-        <hr class="break-line m-auto mt-md-5">
+        <hr class="break-line m-auto">
 
-        <div id="experience" class="text-center"><h3 class="mt-5 mx-0 mb-3">Education & Skills</h3>
-            <hr class="line m-auto mb-4">
-            <div class="education mt-3 m-md-auto pt-md-4">
-                <img class="edu-treehouse mt-2" src="svg/treehouse.svg" alt="treehouse icon">
-                <p class="education-info m-3">Front-End Web Development Techdegree issued by Treehouse Inc., 2021.</p>
+        <div id="experience" class="offsetfix"></div>
+        <div id="experience-container" class="text-center m-md-auto"><h3 class="mt-5 mx-0 mb-3">Education</h3>
+            <hr class="line m-auto">
+            <div class="education mt-3 my-md-auto">
+
+                <div class="education-container mt-5 mb-4">
+                    <div class="year"><h2 class="m-0">2021</h2></div>
+                    <div class="education-info ml-2 ml-md-5">
+                        <p class="info-1 mb-1">Front-End Web Development Techdegree</p>
+                        <p class="info-2">Team Treehouse Inc.</p>
+                    </div>
+                </div>
+
+                <div class="education-container mb-4">
+                    <div class="year"><h2 class="m-0">2020</h2></div>
+                    <div class="education-info ml-2 ml-md-5">
+                        <p class="info-1 mb-1">BSc. Holistic Medicine </p>
+                        <p class="info-2">Da Vinci Institute of Holistic Medicine, CYP, Europe</p>
+                    </div>
+                </div>
+
+                <div class="education-container mb-4">
+                    <div class="year"><h2 class="m-0">2019</h2></div>
+                    <div class="education-info ml-2 ml-md-5">
+                        <p class="info-1 mb-1">Regenerative Cellular Detoxification and Clinical Iridology</p>
+                        <p class="info-2 mb-0">International School of Regenerative Detoxification, FL, USA</p>
+                    </div>
+                </div>
             </div>
-
-            <hr class="line-dash m-auto">
-
-            <div class="skills-container mb-md-5">
-                <div class="skill">
-                    <p class="skill-info mt-3 mb-0">HTML</p>
+        </div>
+      
+        <div id="skills-container" class="section text-center">
+            <h3 class="mt-5 mx-0 mb-3 mt-lg-0">Skills</h3>
+            <hr class="line m-auto">
+            <div class="skill-list mt-4 mt-md-3">
+                <div class="skill mx-md-auto mt-md-4">
                     <img class="skill-img html mb-md-5" src="svg/html.svg" alt="html icon">
                 </div>
 
                 <div class="skill">
-                    <p class="skill-info m-0">CSS</p>
                     <img class="skill-img css" src="svg/css.svg" alt="CSS icon">
                 </div>
 
                 <div class="skill">
-                    <p class="skill-info m-0">JavaScript</p>
                     <img class="skill-img js mb-5" src="svg/js.svg" alt="JS icon">
                 </div>
             </div>
         </div>
 
-        <hr class="break-line m-auto">
-
-        <div id="portfolio" class="text-center pb-5"><h3 class="mt-5 mx-0 mb-3">Personal Projects</h3>
-            <hr class="line m-auto mb-5">
-            <div class="project mt-3">
+        
+        <div id="portfolio" class="offsetfix"></div>
+        <div id="portfolio-container" class="section text-center mb-5"><h3 class="my-3 mx-0">Personal Projects</h3>
+            <hr class="line m-auto">
+            
+            <div class="project mt-3 mt-md-5">
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_1.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_1.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box long pt-5 mt-5">
                             <h2 class="m-auto">Responsive Portfolio</h2>
                             <p class="m-auto">HTML & CSS</p>
                             <div class="buttons mt-md-5">
-                                <form style="display: inline" action="personal_projects/project_1/project-1.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
+                                <form style="display: inline" action="personal_projects/project_1/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
                                 <form style="display: inline" action="https://github.com/gintareauks/Responsive-Layout-Project" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_2.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_2.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box long pt-5 mt-5">
                             <h2 class="m-auto">Web App Dashboard</h2>
@@ -127,18 +145,18 @@
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_3.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_7.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box short pt-2">
-                            <h2 class="m-auto">Employee Directory</h2>
-                            <p class="m-auto">HTML & CSS</p>
-                            <form style="display: inline" action="personal_projects/project_3/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                            <form style="display: inline" action="https://github.com/gintareauks/employee_directory_v1" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
+                            <h2 class="m-auto">Photo Gallery</h2>
+                            <p class="m-auto">HTML, CSS & JavaScript</p>
+                            <form style="display: inline" action="personal_projects/project_7/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
+                            <form style="display: inline" action="https://github.com/gintareauks/photo_gallery_v5" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
                         </div>
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_4.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_4.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box short pt-2">
                             <h2 class="m-auto">Game Show App</h2>
@@ -149,7 +167,7 @@
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_5.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_5.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box long pt-5 mt-5">
                             <h2 class="m-auto">Responsive Web Form</h2>
@@ -162,7 +180,7 @@
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_6.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_6.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box long pt-5 mt-5">
                             <h2 class="m-auto">Responsive Style Guide</h2>
@@ -175,13 +193,13 @@
                     </div>
                 </div>
                 <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_7.png" alt="project screenshot">
+                    <img src="personal_projects/project_screenshots/project_3.png" alt="project screenshot" class="p-0 my-4">
                     <div class="img-description">
                         <div class="box short pt-2">
-                            <h2 class="m-auto">Photo Gallery</h2>
-                            <p class="m-auto">HTML, CSS & JavaScript</p>
-                            <form style="display: inline" action="personal_projects/project_7/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                            <form style="display: inline" action="https://github.com/gintareauks/photo_gallery_v5" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
+                            <h2 class="m-auto">Employee Directory</h2>
+                            <p class="m-auto">HTML & CSS</p>
+                            <form style="display: inline" action="personal_projects/project_3/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
+                            <form style="display: inline" action="https://github.com/gintareauks/employee_directory_v1" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
                         </div>
                     </div>
                 </div>
@@ -189,23 +207,27 @@
         </div>
     </main>
 
+    <hr class="break-line m-auto mb-md-5">
+
     <footer>
-        <div id="contact" class="text-center mt-5 m-md-auto py-md-5 px-md-0">
-            <img class="me mt-md-5" src="images/me.jpg" alt="me">
-            <h3 class="pt-4">Get In Touch</h3>
+        <div id="contact" class="offsetfix"></div>
+        <div id="contact-container" class="section text-center mt-5 m-md-auto pt-md-5 px-md-0">
+            <img class="me" src="images/me.jpg" alt="me">
+            <h3 class="mt-4">Get In Touch</h3>
             <p class="contact-info m-3">If You are interested in working together or have any questions, I'd love for You to reach out!</p>
             <a id="contact-btn" href="mailto:gintareauks@gmail.com"><p class="contact-button m-5">Contact Me</p></a>
         </div>
 
-        <div id="social" class="pt-5 pb-3 pb-lg-5">
-            <div class="social-container m-md-auto">
+        
+        <div id="social" class="mt-5 mt-lg-0 pt-5 pb-3 pb-lg-5">
+            <div class="social-container section m-md-auto">
                 <div id="logo-bottom" class="m-auto m-md-0 pb-md-5 pl-md-5">
                     <h3>Tech Vision Studio</h3>
                     <h4>By Gintare</h4>
                 </div>
                 <div id="social-links" class="text-center pt-s-5 m-md-auto">
                     <div class="social-contact mb-0">
-                        <h4 class="mt-5 pt-s-3 pt-md-4 mb-md-0 mt-md-0">Location</h4>
+                        <h4 class="mt-5 pt-s-3 pt-md-4 my-md-0">Location</h4>
                         <div class="location-container">
                             <div class="loc-icon-container"><svg class="location-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg></div>
                             <div class="loc-info-container"><a class="location" href="https://goo.gl/maps/YxPAedLrLRfQ1RpR8" target="_blank"><p class="location-info m-0">Vilnius, LT</p></a></div>
@@ -229,7 +251,7 @@
                         </svg></a>
                     </div>
                     <div class="social-contact github-container">
-                        <h4 class=" pt-4 pt-s-3">GitHub</h4>
+                        <h4 class="pt-4 pt-s-3">GitHub</h4>
                         <a class="github" href="https://github.com/gintareauks" target="_blank">
                         <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
                     </div>
@@ -252,5 +274,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="zenscroll-latest/zenscroll-min.js"></script>
 </body>
 </html>

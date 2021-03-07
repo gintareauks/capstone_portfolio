@@ -11,6 +11,7 @@
 
 .logo {
     width: 310px;
+    cursor: pointer;
 }
 
 .navbar-toggler {
@@ -35,34 +36,61 @@ a p:hover {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.8;
-    height: 250px;
+    height: 300px;
 }
 
 @media(min-width: $tablet) {
     #intro {
-        height: 300px;
+        height: 400px;
         background-position: 50% 50%;
+        background-attachment: fixed;
+    }
 
+    .logo {
+        width: 30%;
     }
 }
 
 @media(min-width: $laptop) {
-    .logo-pic {
-        width: 18%;
+    body {
+        padding-top: 237.13px;
     }
-    
+
+    .logo{
+        position: relative;
+        width: 300px!important;
+        height: auto!important;
+        transition: all 0.7s ease;
+        transform-origin: left center;
+        -webkit-transform: translateZ(0);
+    }
+
+    .tiny{
+        width:200px!important;
+    }
+
+    #nav-container {
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        z-index: 1000;  
+        background-color: white;
+    }
+
     #intro {
-        height: 475px;
+        background-attachment: fixed;
+        height: 500px;
     }
 
-    a:hover,
-    a p:hover {
-    background-color: initial;
+    a:hover {
+        background-color: initial;
+    }
+
+
+    .active {
+        color: teal;
+    }
 }
 
-#intro {
-    background-attachment: fixed;
-    height: 450px;
-}
-}
+
 

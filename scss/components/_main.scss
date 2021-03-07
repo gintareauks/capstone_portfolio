@@ -14,17 +14,31 @@
     width: 200px;
 }
 
-#experience .skill img {
-    width: 150px;
-    animation : rotate 10s infinite;
+.education {
+    &-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        height: auto;
+    }
+    &-info {
+        text-align: left;
+        width: 90%;
+    }
 }
 
-@keyframes rotate {
-    from {
-    transform: rotateY(0deg);
-}   to {
-    transform: rotateY(360deg);
+.year {
+    border-right: 3px solid #4d4d4d;
 }
+
+
+.skill-img {
+    width: 150px;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    &:hover {
+        transform: scale(1.2)  
+    }
 }
 
 .line-dash {
@@ -39,10 +53,15 @@
     padding: 30px 0;
 }
 
-#portfolio {
-    background: rgb(51,147,156);
-    background: linear-gradient(0deg, rgba(51,147,156,0.2819502801120448) 0%, rgba(255,255,255,1) 100%);
+
+#portfolio-container {
+    // background: rgb(51,147,156);
+    // background: linear-gradient(0deg, rgba(51,147,156,0.2819502801120448) 50%, rgba(255,255,255,1) 100%);
+
+    background-image: url("../images/plant-fix.jpg");
+    background-size: cover;
 }
+
 
 .img {
     &-wrap {
@@ -121,8 +140,9 @@ span {
     }
 }
 
-#contact {
+#contact-container {
     background-size: cover;
+    min-height: 550px;
 }
 
 .me {
@@ -131,7 +151,7 @@ span {
 }
 
 #scrollToTop {
-    cursor: pointer; /* Add a mouse pointer on hover */
+    cursor: pointer;
     width: 20px;
     height: 100%;
     fill: teal;
@@ -142,20 +162,21 @@ span {
 }
 
 @media (min-width: $tablet) {
-    #about {
-        height: 300px;
+    #about-container {
+        min-height: 500px;
         & p {
-            width: 750px; 
+            width: 80%; 
         }
     }
 
-    #experience .edu-treehouse {
-        max-width: 200px;
+    #experience-container {
+        height: 570px;
+        width: 70%;
     }
 
-    .education {
-        width: 400px;
-        height: 200px;
+
+    #skills-container {
+        height: 360px;
     }
 
     .skill {
@@ -163,7 +184,7 @@ span {
         display: inline-block;
         text-align: center;
         &-img {
-            width: 300%;
+            width: 70%;
         }
     }
 
@@ -180,21 +201,23 @@ span {
         width: 200px;
     }
 
-
-    #contact {
+    #contact-container {
         width: 600px;
-        height: 700px;
+        height: 600px;
     }
 
     .buttons {
         width: 100%;
-        margin: auto;
     }
 }
 
 @media(min-width: $laptop) {
-    #about {
-        width: 800px;
+    #about-container p{
+        width: 70%;
+    }
+
+    #about-container {
+        max-height: 500px;
     }
 
     .line-dash {
@@ -208,7 +231,11 @@ span {
         justify-items: right;
     }
 
-    #experience .skill img {
+    #experience-container {
+        width: 55%;
+    }
+
+    #experience-container .skill img {
         width: 200px;
         animation : rotate 10s infinite;
     }
@@ -236,10 +263,35 @@ span {
     }
 
     .break-line {
-        width: 1000px;
+        width: 900px;
+    }
+
+    .offsetfix {
+    position: absolute;
+    min-height: 165px;
+    margin-top: -170px;
     }
 }
 
+
+@media(min-width: 1440px) {
+#about-container {
+    height: 200px;
+    width: 1300px;
+    margin: auto;
+}
+
+#experience-container {
+    height: 500px;
+    width: 1000px;
+    margin: auto;
+}
+
+.project {
+    width: 1300px;
+    margin: auto;
+}
+}
 
 
 

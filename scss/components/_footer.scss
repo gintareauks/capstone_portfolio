@@ -9,10 +9,6 @@
     }
 }
 
-.location-icon {
-    fill: $color-text-secondary;
-}
-
 .email:hover {
     background-color: unset !important;
 }
@@ -35,6 +31,10 @@
     background-color: unset !important;
 }
 
+.location-icon {
+    fill: $color-text-secondary;
+}
+
 .location:hover {
     background-color: unset !important;
 }
@@ -45,15 +45,13 @@
 
 .github {
     fill: $color-text-secondary;
-}
-
-.github:hover {
-    fill: $color-text-tertiary;
-    background-color: unset !important;
-}
-
-.github path:hover {
-    background-color: unset !important;
+    &:hover {
+        fill: $color-text-tertiary;
+        background-color: unset !important;
+    }
+    & path:hover {
+        background-color: unset !important;
+    }
 }
 
 .location,
@@ -68,8 +66,13 @@
 }
 
 @media (min-width: $tablet) {
-    .social-contact {
-        width: 20%;
+    .social {
+        &-contact {
+            width: 100%;
+        }
+        &-container {
+            height: 230px;
+        }
     }
 
     .linkedin {
@@ -82,16 +85,8 @@
         width: 740px;
     }
 
-    .social-contact {
-        width: 100%;
-    }
-
     #logo-bottom {
         width: 350px;
-    }
-
-    .social-container {
-        height: 230px;
     }
 
     .email, 
@@ -108,18 +103,13 @@
 
 @media(min-width: $laptop) {
     .social-container {
-        width: 100%;
+        max-width: 1000px;
     }
 
     #social-links{
         grid-template-columns: 200px 200px 200px 200px 200px; 
         width:  1000px;     
     }
-
-    .social-container {
-        max-width: 1000px;
-    }
-
 }
 
 

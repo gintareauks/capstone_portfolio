@@ -163,7 +163,7 @@ span {
 
 @media (min-width: $tablet) {
     #about-container {
-        min-height: 500px;
+        min-height: 400px;
         & p {
             width: 80%; 
         }
@@ -217,7 +217,7 @@ span {
     }
 
     #about-container {
-        max-height: 500px;
+        min-height: 350px;
     }
 
     .line-dash {
@@ -276,8 +276,8 @@ span {
 
 @media(min-width: 1440px) {
 #about-container {
-    height: 200px;
-    width: 1300px;
+    height: 530px;
+    width: 1200px;
     margin: auto;
 }
 

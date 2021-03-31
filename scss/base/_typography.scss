@@ -32,27 +32,23 @@ a {
     color: $color-text-secondary;
 }
 
-#about-container, 
-#experience-container, 
-#portfolio-container,
-#skills-container {
-    font-size: 2em;
-    font-weight: 900;
-}
+// #about-container, 
+// #portfolio-container{
+//     font-size: 2em;
+//     font-weight: 900;
+// }
 
-#about-container h3,
-#experience-container h3,
-#portfolio-container h3,
-#skills-container h3 {
+#about-container h3 {
     font-weight: 900;
-    font-size: 1em;
+    font-size: 2em;
     font-family: 'Poiret One', cursive;
 }
 
 #about-container p {
-    font-size: 0.67em;
+    font-size: 1.2em;
     font-weight: 400;
 }
+
 
 .break-line {
     color: grey;
@@ -62,13 +58,29 @@ a {
     color: $color-text-dextail;
 }
 
-.education-info {
-    font-size: 0.7em;
-    font-weight: 400;
+.heading {
+    font-size: 2em;
+}
+
+// .education-info {
+//     font-size: 0.7em;
+//     font-weight: 400;
+// }
+
+.education-container {
+    font-size: 1.5em;
+}
+
+.skill-list {
+    font-size: 1.4em;
+}
+
+.portfolio-heading {
+    font-size: 3em;
 }
 
 .year h2 {
-    font-size: 0.7em;
+    font-size: 1em;
 }
 
 
@@ -122,6 +134,10 @@ button:focus {
     font-size: 1.8em;
     font-weight: 600;
     font-family: 'Poiret One', cursive;
+}
+
+#contact-container p{
+    font-size: 1.2em;
 }
 
 .contact {
@@ -215,14 +231,15 @@ button:focus {
         font-size: 0.9em;
     }
 
+    .education-container {
+        font-size: 1.3em;
+    }
+
+
     .navbar a:hover,
     .navbar a p:hover {
     font-weight: 100;
     color: $color-text-tertiary;
-    }
-
-    #skills-container {
-        height: 350px;
     }
 
     .year h2 {
@@ -239,7 +256,11 @@ button:focus {
     }
 
     #contact-container h3 {
-        font-size: 3em;
+        font-size: 2em;
+    }
+
+    #contact-container {
+        max-width: 400px;
     }
 }
 
@@ -255,4 +276,9 @@ button:focus {
     .active {
         color: $color-text-tertiary !important;
       }
+
+
+    #contact-container p {
+        font-size: 1.3em;
+    }
 }

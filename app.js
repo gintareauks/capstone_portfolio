@@ -45,9 +45,9 @@ let mainSections = document.querySelectorAll(".section");
 let lastId;
 let cur = [];
 
-window.addEventListener("scroll", () => {
-   _.throttle(doThatStuff, 100);
-});
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
 
 window.addEventListener("scroll", event => {
   let fromTop = window.scrollY + 50;
@@ -72,5 +72,191 @@ var logo = document.getElementById("logo");
 logo.addEventListener("click", scrollToTop);
 
 
+AOS.init({
+    duration: 1200,
+})
 
 
+
+/////////////////////////////////
+
+const data = [
+    {
+      id: 0,
+      title: "Responsive Portfolio",
+      image: "personal_projects/project_screenshots/project_1.png",
+      description:
+        "Recreated a portfolio on a provided mockup that look and function well on multiple screen sizes.",
+      technologies: "HTML, CSS",
+        live: "personal_projects/project_1/index.html",
+      github: "https://github.com/gintareauks/Responsive-Layout-Project?",
+    },
+    {
+      id: 1,
+      title: "Webb App Dashboard",
+      image: "personal_projects/project_screenshots/project_2.png",
+      description:
+      "Interactive dashboard for a web application. Built using advanced web techniques including SVG graphics and JavaScript programming.",
+      technologies: "HTML, CSS/SASS, JavaScript",
+      live: "personal_projects/project_2/index.html",
+      github: "https://github.com/gintareauks/web_app_dashboard_v3?",
+    },
+    {
+      id: 2,
+      title: "Interactive Photo Gallery",
+      image: "personal_projects/project_screenshots/project_3.png",
+      description:
+        "Interactive, searchable gallery of photos.",
+        technologies: "HTML, CSS, JavaScript",
+      live: "personal_projects/project_3/index.html",
+      github: "https://github.com/gintareauks/photo_gallery_v5?",
+    },
+    {
+      id: 3,
+      title: "Game Show App",
+      image: "personal_projects/project_screenshots/project_4.png",
+      description:
+        "A word guessing game. Used JavaScript to come up with a random phrase that players will try to guess by entering different letters into the program.",
+      technologies: "JavaScript",
+        live: "personal_projects/project_4/index.html",
+      github: "https://github.com/gintareauks/oop_game-v2",
+    },
+    {
+        id: 4,
+        title: "Responsive Web Form",
+        image: "personal_projects/project_screenshots/project_5.png",
+        description:
+          "A responsive registration form.",
+        technologies: "HTML, CSS",
+          live: "personal_projects/project_5/index.html",
+        github: "https://github.com/gintareauks/online_registration_v4?",
+      },
+      {
+        id: 5,
+        title: "Responsive Style Guide",
+        image: "personal_projects/project_screenshots/project_6.png",
+        description:
+          "..",
+        technologies: "CSS/SASS",
+          live: "personal_projects/project_6/index.html",
+        github: "https://github.com/gintareauks/style_guide_v7-2?",
+      },
+      {
+        id: 6,
+        title: "Employee Directory",
+        image: "personal_projects/project_screenshots/project_7.png",
+        description:
+          "Pulls in data from random user generator API and displays their contact info.",
+        technologies: "HTML, CSS, JavaScript, AJAX",
+          live: "personal_projects/project_7/index.html",
+        github: "https://github.com/gintareauks/employee_directory_v1?",
+      },
+      {
+        id: 7,
+        title: "Random Quote Generator",
+        image: "personal_projects/project_screenshots/project_8.png",
+        description:
+          "..",
+        technologies: "JavaScript",
+          live: "personal_projects/project_8/index.html",
+        github: "https://github.com/gintareauks/a_random_quote_generator-v1?",
+      },
+      {
+        id: 8,
+        title: "Data Pagination and Filtering",
+        image: "personal_projects/project_screenshots/project_9.png",
+        description:
+          "..",
+        technologies: "JavaScript",
+          live: "personal_projects/project_9/index.html",
+        github: "https://github.com/gintareauks/data-pagination-and-filtering-v1?",
+      },
+      {
+        id: 10,
+        title: "Interactive Form",
+        image: "personal_projects/project_screenshots/project_10.png",
+        description:
+          "..",
+        technologies: "JavaScript",
+          live: "personal_projects/project_10/index.html",
+        github: "https://github.com/gintareauks/interactive-form-v3?",
+      },
+
+
+  ];
+
+  const modalContainer = document.querySelector(".modal-window__container");
+  const modalContent = document.querySelector(".modal--project");
+  const projectButtons = document.querySelectorAll(".project-button");
+ 
+
+  
+  // Additionally, close the window if the user clicks outside of the modal window
+  window.onclick = function (e) {
+    if (e.target == modalContainer) {
+      modalContainer.style.display = "none";
+      modalContent.innerHTML = "";
+    }
+  };
+  
+  // Open Modal Listeners
+  
+  for (let button = 0; button < projectButtons.length; button++) {
+    projectButtons[button].id = button;
+  }
+  
+  projectButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      createModal(e.target.id);
+    });
+  });
+  
+  // Create Modal Function
+  
+   function createModal(index) {
+    const project = data[index];
+    modalContainer.style.display = "block";
+    const content = `
+    <div class="modal-img-container">
+        <a class="previous">&#8592;</a>
+        <img class="project--image" src=${data[index].image} alt=${"LOVE"}></div>
+    <div class="wrap">
+        <a class="next">&#8594;</a>
+        <h2 class="modal--h2">${data[index].title}</h2>
+        <p class="technologies">${data[index].technologies}</p>
+        <div class="modal__text">
+        <p class="description">${data[index].description}</p>
+        </div>
+        <div class="project__links">
+            <form class="modal-form" action="${data[index].live}" method="get" target="_blank"><button class="mt-3 modal-button">LIVE LINK</button></form>
+            <form class="modal-form" action="${data[index].github}" method="get" target="_blank"><button class="mt-3 modal-button">GITHUB REPO</button></form>
+        </div>
+    </div>    
+    `;
+    modalContent.innerHTML = content;
+
+
+     // move through employees back and forth
+     const previous = document.querySelector('.previous');
+     previous.addEventListener('click', e => {
+         if (index > 0) {
+             index--;
+             createModal(index);
+         } else {
+             index = data.length - 1;
+             createModal(index);
+         }
+     });
+     
+     const next = document.querySelector('.next');
+     next.addEventListener('click', e => {
+       if(index < data.length -1) { 
+         index++;
+         createModal(index);
+       } else {
+           index = 0;
+           createModal(index);
+       }
+     });
+  };
+  

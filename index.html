@@ -9,8 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poiret+One&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -48,179 +54,145 @@
             <h2 class="ml12 text-center m-auto p-1">Your Next Web Developer</h2>
         </div>
     </header>
-    
-
-
 
     <main>
         <div id="about" class="offsetfix section"></div>
         <div id="about-container" class="text-center mt-lg-5 pt-lg-3">
-            <h3 class="mt-5 mx-0 mb-3">About Me</h3>
-            <hr class="line m-auto mb-md-5">
-            <p class="mt-4 mx-4 mx-md-auto">I am a Front-End Web Development Techdegree graduate and I am currently looking for a job as a Junior Front-End Developer.</p>
-            <p class="mt-4 mx-4 mx-md-auto">I enjoy taking any challenges given and trying my best to solve them. Nothing beats the sense of accomplishment after solving the problem as well as thoroughly understanding each step that took me to the destination. I believe in smart, clean, code to deliver the absolute best user experience.</p>
-            <p class="mt-4 mb-5 mx-4 mx-md-auto mb-md-5">I always seek for ways to grow, improve and expand my knowledge. I have recently enrolled in the Full Stack JavaScript Techdegree program.</p>
-        </div>
-
-        <hr class="break-line m-auto">
-
-        <div id="experience" class="offsetfix"></div>
-        <div id="experience-container" class="text-center m-md-auto"><h3 class="mt-5 mx-0 mb-3">Education</h3>
-            <hr class="line m-auto">
-            <div class="education mt-3 my-md-auto">
-
-                <div class="education-container mt-5 mb-4">
-                    <div class="year"><h2 class="m-0">2021</h2></div>
-                    <div class="education-info ml-2 ml-md-5">
-                        <p class="info-1 mb-1">Front-End Web Development Techdegree</p>
-                        <p class="info-2">Team Treehouse Inc.</p>
-                    </div>
-                </div>
-
-                <div class="education-container mb-4">
-                    <div class="year"><h2 class="m-0">2020</h2></div>
-                    <div class="education-info ml-2 ml-md-5">
-                        <p class="info-1 mb-1">BSc. Holistic Medicine </p>
-                        <p class="info-2">Da Vinci Institute of Holistic Medicine, CYP, Europe</p>
-                    </div>
-                </div>
-
-                <div class="education-container mb-4">
-                    <div class="year"><h2 class="m-0">2019</h2></div>
-                    <div class="education-info ml-2 ml-md-5">
-                        <p class="info-1 mb-1">Regenerative Cellular Detoxification and Clinical Iridology</p>
-                        <p class="info-2 mb-0">International School of Regenerative Detoxification, FL, USA</p>
-                    </div>
-                </div>
+            <div id="about-text" data-aos="fade-right">
+                <h3 class="mt-5 mx-0 mb-4">about...</h3>
+                <img class="me-about" src="images/me-about.jpg" alt="me">
+                <p class="mt-4 mx-3 mx-md-auto">Hi, I'm Gintare! I am a web developer with experience working in front-end technologies (HTML,CSS3, SASS, JavaScript) alongside some back-end experience in Node, Express.js.
+                I have acquired my knowledge through Front-End Development Techdegree certification with the Treehouse company.</p>
+                <p class="mt-2 mx-3 mx-md-auto">I enjoy taking any challenges given and trying my best to solve them. Nothing beats the sense of accomplishment after solving the problem as well as thoroughly understanding each step that took me to the destination. I believe in smart, clean code to deliver the absolute best user experience.</p>
+                <p class="mt-2 mx-3 mx-md-auto">I am currently interested in discussing opportunities related to Front-End Web Development and Full-Stack JavaScript.</p>
+                <!-- <p class="mb-5 mx-3 mx-md-auto">Luckily one of the many great things about this industry is how you can work from anywhere in the world. So please don't hesitate to contact me no matter where you're located!</p> -->
             </div>
-        </div>
-      
-        <div id="skills-container" class="section text-center">
-            <h3 class="mt-5 mx-0 mb-3 mt-lg-0">Skills</h3>
-            <hr class="line m-auto">
-            <div class="skill-list mt-4 mt-md-3">
-                <div class="skill mx-md-auto mt-md-4">
-                    <img class="skill-img html mb-md-5" src="svg/html.svg" alt="html icon">
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img css" src="svg/css.svg" alt="CSS icon">
-                </div>
-
-                <div class="skill">
-                    <img class="skill-img js mb-5" src="svg/js.svg" alt="JS icon">
-                </div>
+            <div class="ornaments">
+                <img src="svg/down.svg" class="arrow">
             </div>
         </div>
 
+        <div id="education_experience_wrap" data-aos="fade-right">
+            <div id="experience" class="offsetfix"></div>
+                <div id="education" class="text-center m-md-auto my-lg-0">
+                    <h3 class="box heading mt-2 my-lg-0 mx-auto">Education</h3>
+
+                    <div class="education-container mt-5 mb-4">
+                        <div class="year"><h2 class="m-0">2021-present</h2></div>
+                        <div class="education-info ml-2 ml-md-5">
+                            <p class="info-1 mb-1">Full Stack JavaScript Techdegree</p>
+                            <p class="info-2">Team Treehouse Inc.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-container mt-5 mb-4">
+                        <div class="year"><h2 class="m-0">2020-2021<br><em>(certified)</em></h2></div>
+                        <div class="education-info ml-2 ml-md-5">
+                            <p class="info-1 mb-1">Front-End Web Development Techdegree</p>
+                            <p class="info-2">Team Treehouse Inc.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-container mb-4">
+                        <div class="year"><h2 class="m-0">2017-2020</h2></div>
+                        <div class="education-info ml-2 ml-md-5">
+                            <p class="info-1 mb-1">BSc. Holistic Medicine </p>
+                            <p class="info-2">Da Vinci Institute of Holistic Medicine, CYP, Europe</p>
+                        </div>
+                    </div>
+
+                </div>
         
+                <div id="experience-container" class="text-center m-md-auto">
+                    <h3 class="box heading mt-5 my-lg-0 mx-auto mb-4">Technologies</h3>
+                    <ul class="skill-list mb-5">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SASS</li>
+                        <li>JavaScript</li>
+                        <li>Git and Github</li>
+                        <li>VS Code</li>
+                        <li>Accessibility</li>
+                        <li>OOP</li>
+                        <li>Fetch and Public APIs</li>
+                        <li> Node.js</li>
+                        <li>Express</li>
+                        <li>Pug</li>
+                    </ul>
+                </div>
+        </div>
+
+
         <div id="portfolio" class="offsetfix"></div>
-        <div id="portfolio-container" class="section text-center mb-5"><h3 class="my-3 mx-0">Personal Projects</h3>
-            <hr class="line m-auto">
+        <div id="portfolio-container" class="section text-center pb-5" data-aos="fade-right">
+            <h3 class="portfolio-heading py-5 pb-md-2 my-0 mx-0">PORTFOLIO</h3>
             
             <div class="project mt-3 mt-md-5">
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_1.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box long pt-5 mt-5">
-                            <h2 class="m-auto">Responsive Portfolio</h2>
-                            <p class="m-auto">HTML & CSS</p>
-                            <div class="buttons mt-md-5">
-                                <form style="display: inline" action="personal_projects/project_1/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                                <form style="display: inline" action="https://github.com/gintareauks/Responsive-Layout-Project" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-card project-img-1 p-0 mb-5" id="0">
+                    <button class="project-button" id="0">View</button>
                 </div>
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_2.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box long pt-5 mt-5">
-                            <h2 class="m-auto">Web App Dashboard</h2>
-                            <p class="m-auto">HTML, CSS & JavaScript</p>
-                            <div class="buttons mt-md-5">
-                                <form style="display: inline" action="personal_projects/project_2/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                                <form style="display: inline" action="https://github.com/gintareauks/web_app_dashboard_v3" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-card project-img-2 p-0 my-5" id="1">
+                    <button class="project-button" id="1">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_2.png" alt="project screenshot" class="project-card project-img-1 p-0 my-4"> -->
+                </div> 
+                <div class="project-card project-img-3 p-0 my-5" id="2"> 
+                    <button class="project-button" id="2">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_7.png" alt="project screenshot" class="project-card project-img-2 p-0 my-4"> -->
                 </div>
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_7.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box short pt-2">
-                            <h2 class="m-auto">Photo Gallery</h2>
-                            <p class="m-auto">HTML, CSS & JavaScript</p>
-                            <form style="display: inline" action="personal_projects/project_7/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                            <form style="display: inline" action="https://github.com/gintareauks/photo_gallery_v5" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                        </div>
-                    </div>
+                <div class="project-card project-img-4 p-0 my-5" id="3">
+                    <button class="project-button" id="3">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_4.png" alt="project screenshot" class="project-card project-img-3 p-0 my-4"> -->
                 </div>
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_4.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box short pt-2">
-                            <h2 class="m-auto">Game Show App</h2>
-                            <p class="m-auto">JavaScript</p>
-                            <form style="display: inline" action="personal_projects/project_4/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                            <form style="display: inline" action="https://github.com/gintareauks/game_show_app_v1" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                        </div>
-                    </div>
+                <div class="project-card project-img-5 p-0 my-5" id="4">
+                    <button class="project-button" id="4">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_5.png" alt="project screenshot" class="project-card project-img-4 p-0 my-4"> -->
                 </div>
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_5.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box long pt-5 mt-5">
-                            <h2 class="m-auto">Responsive Web Form</h2>
-                            <p class="m-auto">HTML & CSS</p>
-                            <div class="buttons mt-md-5">
-                                <form style="display: inline" action="personal_projects/project_5/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                                <form style="display: inline" action="https://github.com/gintareauks/online_registration_v4" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-card project-img-6 p-0 my-5" id="5">
+                    <button class="project-button" id="5">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_6.png" alt="project screenshot" class="project-card project-img-5 p-0 my-4"> -->
                 </div>
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_6.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box long pt-5 mt-5">
-                            <h2 class="m-auto">Responsive Style Guide</h2>
-                            <p class="m-auto">HTML & SASS</p>
-                            <div class="buttons mt-md-5">
-                                <form style="display: inline" action="personal_projects/project_6/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                                <form style="display: inline" action="https://github.com/gintareauks/style_guide_v7-2" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                            </div>
-                        </div>
-                    </div>
+                <div class="project-card project-img-7 p-0 my-5" id="6">
+                    <button class="project-button" id="6">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_3.png" alt="project screenshot" class="project-card project-img-6 p-0 my-4"> -->
                 </div>
-                <div class="img-wrap">
-                    <img src="personal_projects/project_screenshots/project_3.png" alt="project screenshot" class="p-0 my-4">
-                    <div class="img-description">
-                        <div class="box short pt-2">
-                            <h2 class="m-auto">Employee Directory</h2>
-                            <p class="m-auto">HTML, CSS, JavaScript & AJAX</p>
-                            <form style="display: inline" action="personal_projects/project_3/index.html" method="get" target="_blank"><button class="mt-3"><span>See the Site</span></button></form>
-                            <form style="display: inline" action="https://github.com/gintareauks/employee_directory_v1" method="get" target="_blank"><button class="mt-3"><span>See the Code</span></button></form>
-                        </div>
-                    </div>
+
+                <div class="project-card project-img-8 p-0 my-5" id="7">
+                    <button class="project-button" id="7">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_8.png" alt="project screenshot" class="project-card project-img-7 p-0 my-4"> -->
                 </div>
+
+                <div class="project-card project-img-9 p-0 my-5" id="8">
+                    <button class="project-button" id="8">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_9.png" alt="project screenshot" class="project-card project-img-8 p-0 my-4"> -->
+                </div>
+
+                <div class="project-card project-img-10 p-0 my-5" id="9">
+                    <button class="project-button"id="9">View</button>
+                    <!-- <img src="personal_projects/project_screenshots/project_10.png" alt="project screenshot" class="p-0 my-4"> -->
+                </div> 
             </div>
+        </div>
+
+        <div class="modal-window__container" style="display: none;">
+            <div class="modal--project"></div>
         </div>
     </main>
 
-    <hr class="break-line m-auto mb-md-5">
+    <!-- <hr class="break-line m-auto mb-md-5"> -->
 
     <footer>
         <div id="contact" class="offsetfix"></div>
-        <div id="contact-container" class="section text-center mt-5 m-md-auto pt-md-5 px-md-0">
-            <img class="me" src="images/me.jpg" alt="me">
-            <h3 class="mt-4">Get In Touch</h3>
-            <p class="contact-info m-3">If You are interested in working together or have any questions, I'd love for You to reach out!</p>
-            <a id="contact-btn" href="mailto:gintareauks@gmail.com"><p class="contact-button m-5">Contact Me</p></a>
+        <div id="contact-container" class="section text-center mt-5 m-md-auto pt-md-5 px-md-0" data-aos="fade-up">
+            <!-- <img class="me" src="images/me.jpg" alt="me"> -->
+            <h3 class="mt-4">GET IN TOUCH</h3>
+            <p class="contact-info m-3">Luckily one of the many great things about this industry is how you can work from anywhere in the world. So please don't hesitate to contact me no matter where you're located!</p>
+            <!-- <p class="contact-info m-3">Interested in working together? Drop me a line!</p> -->
+            <a href="mailto:gintareauks@gmail.com"><img src="svg/email.svg" class="email-icon mt-2"></a>
+            <!-- <a id="contact-btn" href="mailto:gintareauks@gmail.com"><p class="contact-button m-5">Contact Me</p></a> -->
         </div>
 
         
-        <div id="social" class="mt-5 mt-lg-0 pt-5 pb-3 pb-lg-5">
+        <div id="social" class="mt-5 mt-lg-0 pt-5 pb-3 pb-lg-5" data-aos="fade-up">
             <div class="social-container section m-md-auto">
                 <div id="logo-bottom" class="m-auto m-md-0 pb-md-5 pl-md-5">
                     <h3>Tech Vision Studio</h3>
@@ -270,6 +242,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

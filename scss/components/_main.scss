@@ -13,7 +13,8 @@
     padding-top: 50px;
 }
 
-.modal-project {
+.modal {
+    &-project {
     max-width: 320px;
     min-height: 300px;
     background: white;
@@ -21,6 +22,7 @@
     grid-template-rows: minmax(50px 250px) minmax(50px, 490px);
     border-radius: 10px;
     position: relative;
+    }
     &-image {
         max-width: 220px;
         max-height: 230px;   
@@ -393,9 +395,9 @@
             text-align: left;
         }
         &-project {
-            max-width: 800px;
-            max-height: 569.53px;
-            grid-template-columns: 500px 300px;  
+            max-width: 900px;
+            height: 569.53px;
+            grid-template-columns: 500px 400px;  
         }
         &-image {
             max-width: 420px;

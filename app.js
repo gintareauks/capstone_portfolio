@@ -1,4 +1,4 @@
-// Intro displays letter by letter
+// INTRO displays letter by letter
 var textWrapper = document.querySelector('.ml12');
 var scrollToTopBtn = document.getElementById("scrollToTop");
 var rootElement = document.documentElement;
@@ -15,20 +15,18 @@ anime.timeline({})
     duration: 1200,
     delay: (el, i) => 2000 + 100 * i
   });
-
+ 
+function scrollToTop() {
+rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+});
+}
   
-  function scrollToTop() {
-    rootElement.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-  
-  scrollToTopBtn.addEventListener("click", scrollToTop);
+scrollToTopBtn.addEventListener("click", scrollToTop);
 
 
-
-// logo scales down when scrolling down
+// LOGO scales down when scrolling down
 $(window).scroll(function () {
     if ($(document).scrollTop() == 0) {
         $('#logo').removeClass('tiny');
@@ -38,16 +36,9 @@ $(window).scroll(function () {
 });
 
 
-// Nav links light up as scrolling past sections
+// NAV LINK lights up as scrolling past the section
 let mainNavLinks = document.querySelectorAll("nav ul li a");;
 let mainSections = document.querySelectorAll(".section");
-
-let lastId;
-let cur = [];
-
-// window.addEventListener("scroll", () => {
-//    _.throttle(doThatStuff, 100);
-// });
 
 window.addEventListener("scroll", event => {
   let fromTop = window.scrollY + 50;
@@ -67,19 +58,20 @@ window.addEventListener("scroll", event => {
 });
 
 
-// clicking logo takes back up
+// clicking the LOGO brings to the top of the page
 var logo = document.getElementById("logo");
 logo.addEventListener("click", scrollToTop);
 
 
+// Animation 
 AOS.init({
     duration: 1200,
 })
 
 
+// MODAL SECTION
 
-/////////////////////////////////
-
+// Projects data
 const data = [
     {
       id: 0,
@@ -93,10 +85,10 @@ const data = [
     },
     {
       id: 1,
-      title: "Webb App Dashboard",
+      title: "Web App Dashboard",
       image: "personal_projects/project_screenshots/project_2.png",
       description:
-      "Interactive dashboard for a web application. Built using advanced web techniques including SVG graphics and JavaScript programming.",
+        "This interactive WebApp Dashboard provides a range of traffic-related data to the end-user. The app uses chart.js to display bar, line and pie charts. The site is optimised to provide a top-end user experience across mobile, tablet and desktop platforms. As well as displaying traffic informaton via charts, the app also displays widgets that showcase alerts, the latest user registrations, and comments in a forum. Lastly, the app makes use of localstorage to store the user's preferences for their next visit.",
       technologies: "HTML, CSS/SASS, JavaScript",
       live: "personal_projects/project_2/index.html",
       github: "https://github.com/gintareauks/web_app_dashboard_v3?",
@@ -181,82 +173,81 @@ const data = [
           live: "personal_projects/project_10/index.html",
         github: "https://github.com/gintareauks/interactive-form-v3?",
       },
+    ];
 
-
-  ];
-
-  const modalContainer = document.querySelector(".modal-window__container");
-  const modalContent = document.querySelector(".modal--project");
-  const projectButtons = document.querySelectorAll(".project-button");
+const modalContainer = document.querySelector(".overlay");
+const modalContent = document.querySelector(".modal-project");
+const projectButtons = document.querySelectorAll(".project-button");
  
 
+// Close the window if the user clicks outside of the modal window
+window.onclick = function (e) {
+if (e.target == modalContainer) {
+    modalContainer.style.display = "none";
+    modalContent.innerHTML = "";
+}
+};
   
-  // Additionally, close the window if the user clicks outside of the modal window
-  window.onclick = function (e) {
-    if (e.target == modalContainer) {
-      modalContainer.style.display = "none";
-      modalContent.innerHTML = "";
-    }
-  };
+
+// Project VIEW button opens modal
+for (let i = 0; i < projectButtons.length; i++) {
+    projectButtons[i].id
+}
   
-  // Open Modal Listeners
+projectButtons.forEach((button) => {
+button.addEventListener("click", (e) => {
+    createModal(e.target.id);
+});
+});
   
-  for (let button = 0; button < projectButtons.length; button++) {
-    projectButtons[button].id = button;
-  }
-  
-  projectButtons.forEach((button) => {
-    button.addEventListener("click", (e) => {
-      createModal(e.target.id);
-    });
-  });
-  
-  // Create Modal Function
-  
-   function createModal(index) {
-    const project = data[index];
+
+// Create MODAL Function
+function createModal(index) {
     modalContainer.style.display = "block";
     const content = `
     <div class="modal-img-container">
         <a class="previous">&#8592;</a>
-        <img class="project--image" src=${data[index].image} alt=${"LOVE"}></div>
+        <img class="modal-image" src=${data[index].image} alt=${"LOVE"}></div>
     <div class="wrap">
         <a class="next">&#8594;</a>
-        <h2 class="modal--h2">${data[index].title}</h2>
-        <p class="technologies">${data[index].technologies}</p>
-        <div class="modal__text">
-        <p class="description">${data[index].description}</p>
+        <h2 class="modal-h2">${data[index].title}</h2>
+        <p class="modal-technologies"><em>${data[index].technologies}</em></p>
+        <div class="modal-text">
+            <p class="modal-description">${data[index].description}</p>
         </div>
-        <div class="project__links">
-            <form class="modal-form" action="${data[index].live}" method="get" target="_blank"><button class="mt-3 modal-button">LIVE LINK</button></form>
-            <form class="modal-form" action="${data[index].github}" method="get" target="_blank"><button class="mt-3 modal-button">GITHUB REPO</button></form>
+        <div class="project-links">
+
+            <a href="${data[index].live}" class="modal-button">LIVE LINK</a>
+            <a href="${data[index].github}" class="modal-button">GITHUB REPO</a>
+            
+            
         </div>
     </div>    
     `;
     modalContent.innerHTML = content;
 
 
-     // move through employees back and forth
-     const previous = document.querySelector('.previous');
-     previous.addEventListener('click', e => {
-         if (index > 0) {
-             index--;
-             createModal(index);
-         } else {
-             index = data.length - 1;
-             createModal(index);
-         }
-     });
-     
-     const next = document.querySelector('.next');
-     next.addEventListener('click', e => {
-       if(index < data.length -1) { 
-         index++;
-         createModal(index);
-       } else {
-           index = 0;
-           createModal(index);
-       }
-     });
-  };
+    // move through projects back and forth
+    const previous = document.querySelector('.previous');
+    previous.addEventListener('click', e => {
+        if (index > 0) {
+            index--;
+            createModal(index);
+        } else {
+            index = data.length - 1;
+            createModal(index);
+        }
+    });
+        
+    const next = document.querySelector('.next');
+    next.addEventListener('click', e => {
+        if(index < data.length -1) { 
+            index++;
+            createModal(index);
+        } else {
+            index = 0;
+            createModal(index);
+        }
+    });
+};
   

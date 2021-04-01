@@ -32,16 +32,12 @@ a {
     color: $color-text-secondary;
 }
 
-// #about-container, 
-// #portfolio-container{
-//     font-size: 2em;
-//     font-weight: 900;
-// }
-
 #about-container h3 {
     font-weight: 900;
     font-size: 2em;
     font-family: 'Poiret One', cursive;
+    letter-spacing: 1.5px;
+
 }
 
 #about-container p {
@@ -50,33 +46,60 @@ a {
 }
 
 
-.break-line {
-    color: grey;
-}
-
-.line {
-    color: $color-text-dextail;
-}
-
 .heading {
     font-size: 2em;
 }
 
-// .education-info {
-//     font-size: 0.7em;
-//     font-weight: 400;
-// }
-
 .education-container {
     font-size: 1.5em;
+}
+
+.box {
+    font-family: 'Cabin', sans-serif;
 }
 
 .skill-list {
     font-size: 1.4em;
 }
 
+.skill-list li {
+    font-style: italic;
+}
+
 .portfolio-heading {
     font-size: 3em;
+}
+
+.portfolio-heading {
+    color: #5BB19D;
+    font-family: 'Cabin', sans-serif !important;
+}
+
+.project-button {
+    font-family: Cabin;
+}
+
+.modal-button {
+    font-family: Cabin;
+    font-size: 1.1em;
+    font-style: 100;
+    color:white;
+}
+
+.modal-button:hover {
+    color: white !important;
+}
+
+.modal-description {
+    font-size: 1em;
+}
+
+.modal-h2 {
+    font-size: 1.5em;
+}
+
+.heading {
+    font-size: 1.7em;
 }
 
 .year h2 {
@@ -94,42 +117,6 @@ a {
     }
 }
 
-
-.skill-info {
-    color: $color-text-dextail;
-    font-size: 0.7em;       
-}
-
-.img-description {
-    color: #fff;
-    & h2 {
-        font-size: 1.1em;
-        color: #F5F5F5;
-        font-weight: 600;
-        font-style: italic;
-    }
-    & p {
-        color: #F5F5F5;
-        font-size: 1em;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-weight: 100;
-    }
-}
-
-button:focus {
-    outline-color: $color-text-tertiary;
-}
-
-#contact-btn{
-    font-size: 0.8em;
-    font-weight: 400;
-}
-
-.contact-button {
-    font-family: 'Cormorant Garamond', serif;
-
-}
-
 #contact-container h3 {
     font-size: 1.8em;
     font-weight: 600;
@@ -141,17 +128,6 @@ button:focus {
 }
 
 .contact {
-    &-button {
-        font-weight: 900;
-        font-size: 1.4em;
-        color:  $color-text-tertiary;
-        text-decoration: underline #b2d8d8;
-        text-underline-position: under; 
-        &:hover,
-        &:focus {
-            text-decoration: underline $color-text-tertiary;
-        }
-    }
     &-info {
         font-size: 1.4em;
     }
@@ -270,12 +246,12 @@ button:focus {
     }
 
     .box h2 {
-        font-size: 1.7em;
+        font-size: 1em;
     }
 
     .active {
         color: $color-text-tertiary !important;
-      }
+    }
 
 
     #contact-container p {
